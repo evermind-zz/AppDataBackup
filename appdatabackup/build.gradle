@@ -39,7 +39,7 @@ android {
 
 dependencies {
     implementation libs.commons.compress
-    implementation libs.native.utils
+    implementation libs.osext.native.utils
     androidTestImplementation libs.androidx.test.runner
     androidTestImplementation libs.androidx.test.core
     androidTestImplementation libs.androidx.test.junit
@@ -50,14 +50,9 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.github.evermindzz'
+                groupId = 'com.github.evermind-zz'
                 artifactId = 'appdatabackup'
                 version = android.defaultConfig.versionName
-            }
-        }
-        repositories {
-            maven {
-                url = uri("file://$buildDir/repo")
             }
         }
     }
