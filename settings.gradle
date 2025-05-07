@@ -1,0 +1,17 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+rootProject.name = 'AppDataBackup'
+include ':appdatabackup'
+
+//dependencyResolutionManagement {
+//    repositories {
+//        google()
+//        mavenCentral()
+//        mavenLocal()
+//    }
+//}
